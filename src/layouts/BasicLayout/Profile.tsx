@@ -5,7 +5,7 @@ import { RiFacebookFill, RiInstagramLine, RiYoutubeFill, RiTwitterXFill, RiArrow
 const ProfileSidebar = () => {
     return (
         <div
-            className='min-w-[250px] bg-background-1 p-[15px] flex flex-col gap-[20px] items-center rounded-md border'
+            className='min-w-[280px] bg-background-1 py-[25px] px-[25px] flex flex-col gap-[26px] items-center rounded-md border overflow-y-auto overflow-x-hidden'
         >
             <div
                 className='border border-border py-[5px] px-[15px] flex gap-[10px] items-center rounded-4xl'
@@ -22,7 +22,7 @@ const ProfileSidebar = () => {
                 className='w-full relative flex flex-col items-center'
             >
                 <div
-                    className='w-[190px] h-[190px] bg-primary-theme relative rounded-md overflow-hidden'
+                    className='w-[90%] bg-primary-theme relative rounded-md overflow-hidden'
                 >
                     <Image
                         alt='Profile Avatar'
@@ -44,11 +44,11 @@ const ProfileSidebar = () => {
             >
 
                 <p
-                    className='text-lg font-semibold'
+                    className='text-2xl font-semibold'
                 >Jayden.design@gmail.com</p>
                 
                 <p
-                    className='text-sm font-medium text-foreground/50'
+                    className='text-base font-medium text-foreground/50'
                 >Based in San Fransisco, CA</p>
 
             </div>
@@ -66,10 +66,10 @@ const ProfileSidebar = () => {
                     ].map((Icon, index) => (
                         <button
                             key={index}
-                            className='min-w-[35px] h-[35px] rounded-full bg-background-2 flex items-center justify-center hover:bg-primary-theme transition-all duration-300 cursor-pointer hover:text-background dark:hover:text-foreground'
+                            className='min-w-[45px] h-[45px] rounded-full bg-background-2 flex items-center justify-center hover:bg-primary-theme transition-all duration-300 cursor-pointer hover:text-background dark:hover:text-foreground'
                         >
                             <Icon
-                                size={16}
+                                size={20}
                             />
                         </button>
                     ))
@@ -81,13 +81,13 @@ const ProfileSidebar = () => {
                 className='flex items-center gap-[20px] w-full pl-[20px] justify-between border border-primary-theme rounded-full cursor-pointer hover:bg-primary-theme transition-all hover:text-background dark:hover:text-foreground'
             >
                 <p
-                    className='text-sm font-medium'
+                    className='text-lg font-medium'
                 >Get Started</p>
                 <div
-                    className='w-[35px] h-[35px] flex items-center justify-center rounded-full bg-primary-theme text-background dark:text-foreground'
+                    className='w-[50px] h-[50px] flex items-center justify-center rounded-full bg-primary-theme text-background dark:text-foreground'
                 >
                     <RiArrowRightUpLongLine
-                        size={15}
+                        size={25}
                     />
                 </div>
             </button>
