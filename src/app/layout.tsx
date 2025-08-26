@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
-import { Rajdhani } from "next/font/google";
+import { Allison, Rajdhani } from "next/font/google";
 import "./globals.css";
 
 const rajdhanim = Rajdhani({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
+})
+
+const allison = Allison({
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-allison",
 })
 
 export const metadata: Metadata = {
@@ -21,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${rajdhanim.className} antialiased`}
+        className={`${rajdhanim.className} ${allison.variable} antialiased`}
       >
         {children}
       </body>

@@ -52,19 +52,22 @@ const ThemeToggler = () => {
 
     return (
         <button
-            className="flex flex-col bg-background-1 p-[5px] relative rounded-full cursor-pointer"
+            className="flex flex-col bg-background-1 p-[5px] relative rounded-full cursor-pointer border"
             onClick={handleChangeTheme}
         >
             <div
                 className={cn(
-                    "w-[30px] h-[30px] rounded-full bg-background-2 absolute",
+                    "w-[30px] h-[30px] rounded-full bg-foreground absolute transition-all duration-300",
                     isDark ? "bottom-[5px] right-[5px]" : "top-[5px] right-[5px]"
                 )}
             ></div>
             {
                 options.map((Option, index) => (
                     <div
-                        className="w-[30px] h-[30px] flex justify-center items-center"
+                        className={cn(
+                            "w-[30px] h-[30px] flex justify-center items-center z-10",
+                            isDark ? index === 1 ? "text-background" : "" : index === 0 ? "text-background" : ""
+                        )}
                         key={index}
                     >
                         <Option

@@ -16,7 +16,7 @@ const FloatNavigation = () => {
             <ThemeToggler/>
 
             <div
-                className='flex flex-col gap-[15px] bg-background-1 p-[5px] rounded-full'
+                className='flex flex-col gap-[10px] bg-background-1 p-[5px] rounded-full border'
             >
                 {
                     menuItems.map((item, index) => (
@@ -25,7 +25,7 @@ const FloatNavigation = () => {
                             className='relative'
                         >
                             <button
-                                className='w-[30px] h-[30px] rounded-full flex items-center justify-center hover:bg-background-2 cursor-pointer'
+                                className='w-[35px] h-[35px] rounded-full flex items-center justify-center hover:bg-foreground hover:text-background transition-all duration-300 cursor-pointer'
                                 onMouseEnter={() => {
                                     setShowTooltip(prev => ({
                                         ...prev,
@@ -40,7 +40,7 @@ const FloatNavigation = () => {
                                 }}
                             >
                                 <item.icon
-                                    size={12}
+                                    size={15}
                                 />
                             </button>
 
