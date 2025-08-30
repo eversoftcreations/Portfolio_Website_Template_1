@@ -1,9 +1,12 @@
 import BasicLayout from "@/layouts/BasicLayout";
+import HeroSection from "./(components)/HeroSection";
 
 export default function Home() {
   return (
     <BasicLayout>
-      This is page content
+      <div>
+        <HeroSection/>
+      </div>
     </BasicLayout>
   );
 }

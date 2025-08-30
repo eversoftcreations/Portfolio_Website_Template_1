@@ -5,7 +5,7 @@ import { RiFacebookFill, RiInstagramLine, RiYoutubeFill, RiTwitterXFill, RiArrow
 const ProfileSidebar = () => {
     return (
         <div
-            className='min-w-[300px] max-w-[300px] bg-background-1 py-[25px] px-[25px] flex flex-col gap-[26px] items-center rounded-md border overflow-y-auto overflow-x-hidden'
+            className='min-w-[300px] w-full md:max-w-[300px] bg-background-1 py-[25px] px-[25px] flex flex-col gap-[26px] items-center rounded-md border overflow-y-auto overflow-x-hidden self-center'
         >
             <div
                 className='border border-border py-[5px] px-[15px] flex gap-[10px] items-center rounded-4xl'
@@ -22,7 +22,7 @@ const ProfileSidebar = () => {
                 className='w-full relative flex flex-col items-center'
             >
                 <div
-                    className='w-[90%] bg-primary-theme relative rounded-md overflow-hidden'
+                    className='w-[90%] max-w-[200px] bg-primary-theme relative rounded-md overflow-hidden'
                 >
                     <Image
                         alt='Profile Avatar'

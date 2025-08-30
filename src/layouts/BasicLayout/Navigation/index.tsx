@@ -10,7 +10,7 @@ const FloatNavigation = () => {
 
     return (
         <div
-            className='fixed top-0 right-0 w-[120px] h-dvh flex flex-col gap-[20px] justify-center items-center'
+            className='fixed top-0 right-0 w-[100px] h-dvh hidden md:flex flex-col gap-[20px] justify-center items-center'
         >
 
             <ThemeToggler/>
@@ -47,7 +47,7 @@ const FloatNavigation = () => {
                             {
                                 showTooltip[index] &&
                                 <span
-                                    className='absolute top-1/2 -translate-y-1/2 right-[40px] text-xs py-[5px] px-[10px] bg-background-1 font-semibold rounded-md'
+                                    className='absolute top-1/2 -translate-y-1/2 right-[45px] text-xs py-[5px] px-[10px] bg-background-1 font-semibold rounded-md'
                                 >{item.title}</span>
                             }
                         </div>
