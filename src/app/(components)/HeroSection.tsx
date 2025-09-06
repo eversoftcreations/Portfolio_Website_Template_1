@@ -7,6 +7,7 @@ import React from 'react'
 const HeroSection = () => {
     return (
         <div>
+            <div id='home'/>
             <div
                 className='space-y-[20px]'
             >
@@ -121,10 +122,10 @@ const HeroSection = () => {
                     </div>
 
                     <div
-                        className='mt-[-30px]'
+                        className='mt-[-25px] md:mt-[-30px]'
                     >
                         <h2
-                            className='flex flex-wrap gap-[10px] text-[45px] leading-[55px]'
+                            className='flex flex-wrap gap-[10px] text-[35px] md:text-[55px] leading-[40px] md:leading-[55px]'
                         >
                             {
                                 "I will offers more than just a place to live it’s a space designed to reflect your unique style inspiration"
@@ -132,7 +133,7 @@ const HeroSection = () => {
                                         <span
                                             key={index}
                                             className={cn(
-                                                index === 0 && "ml-[200px]"
+                                                index === 0 && "ml-[150px] md:ml-[200px]"
                                             )}
                                         >{word}</span>
                                     ))

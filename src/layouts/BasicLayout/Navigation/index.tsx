@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react'
 import menuItems from './menuItems'
-import ThemeToggler from '@/components/ui-elements/ThemeToggler';
 
 const FloatNavigation = () => {
 
@@ -37,6 +36,17 @@ const FloatNavigation = () => {
                                         ...prev,
                                         [index]: false,
                                     }))
+                                }}
+                                
+                                onClick={() => {
+                                    const targetElement = document.querySelector(item.url);
+                                    console.log(targetElement)
+                                    if (targetElement) {
+                                        targetElement.scrollIntoView({
+                                            behavior: "smooth",
+                                            inline: "start",
+                                        });
+                                    }
                                 }}
                             >
                                 <item.icon

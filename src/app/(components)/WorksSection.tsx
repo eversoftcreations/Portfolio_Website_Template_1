@@ -8,6 +8,7 @@ const WorksSection = () => {
         <div
             className='mt-[100px]'
         >
+            <div id='works'/>
             <div
                 className='w-full overflow-hidden bg-background-1/50 py-[40px] px-[50px] rounded-[30px]'
             >
