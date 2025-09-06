@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${rajdhanim.className} ${allison.variable} antialiased`}
+        className={`${rajdhanim.className} ${allison.variable} antialiased dark`}
       >
         {children}
       </body>

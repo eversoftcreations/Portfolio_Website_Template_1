@@ -13,7 +13,7 @@ const FloatNavigation = () => {
             className='fixed top-0 right-0 w-[100px] h-dvh hidden md:flex flex-col gap-[20px] justify-center items-center'
         >
 
-            <ThemeToggler/>
+            {/* <ThemeToggler/> */}
 
             <div
                 className='flex flex-col gap-[10px] bg-background-1 p-[5px] rounded-full border'

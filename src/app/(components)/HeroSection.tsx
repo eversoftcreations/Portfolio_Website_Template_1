@@ -27,7 +27,7 @@ const HeroSection = () => {
                     >Introduction</p>
                 </div>
                 <h1
-                    className='text-[50px] font-medium leading-[55px] max-w-[580px] min-h-[110px]'
+                    className='text-[40px] md:text-[50px] font-medium leading-[55px] max-w-[580px] min-h-[110px]'
                 >
                     <MetrixAnimationText
                         text='Making Your World a Pain Free Experience'
