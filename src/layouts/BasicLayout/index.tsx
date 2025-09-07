@@ -14,6 +14,7 @@ const BasicLayout = ({
             <ProfileSidebar />
             <div
                 className='w-full p-0 md:pl-[50px] md:py-[50px] md:pr-[100px] h-full overflow-auto'
+                id='basic-layout-overflow-element'
                 style={{
                     scrollbarWidth: "none",
                     msOverflowStyle: "none",
