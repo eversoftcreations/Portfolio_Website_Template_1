@@ -100,10 +100,10 @@ const WorksSection = () => {
                                     className='flex items-center flex-nowrap gap-[40px] min-w-max'
                                 >
                                     <div
-                                        className='w-[20px] h-[20px] rounded-full bg-primary-theme'
+                                        className='w-[15px] md:w-[20px] h-[15px] md:h-[20px] rounded-full bg-primary-theme'
                                     />
                                     <span
-                                        className='text-7xl font-medium'
+                                        className='text-5xl md:text-7xl font-medium'
                                     >Selected Works</span>
                                 </div>
                             ))
