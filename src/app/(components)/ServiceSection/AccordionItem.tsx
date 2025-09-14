@@ -51,7 +51,7 @@ export default function ServicesAccordionItem({
                     </motion.div>
                 }
                 <p
-                    className="text-[35px] md:text-5xl"
+                    className="text-[27px] md:text-5xl"
                 >{data.title}</p>
             </button>
             {
@@ -65,9 +65,7 @@ export default function ServicesAccordionItem({
                         x: 0,
                     }}
                 >
-                    <div
-                        className="min-w-max"
-                    >
+                    <div>
                         <ul
                             className="list-disc pl-[35px]"
                         >
@@ -75,7 +73,7 @@ export default function ServicesAccordionItem({
                                 data.points.map((point, index) => (
                                     <li
                                         key={index}
-                                        className="marker:text-[14px] text-[25px] opacity-80"
+                                        className="marker:text-[14px] text-[20px] md:text-[25px] opacity-80"
                                     >{point}</li>
                                 ))
                             }
